@@ -12,7 +12,7 @@ from test_parts import *
 from more_functions import *
 
 
-'''
+
 num_ind = 6
 parts = [x for x in partitions_n(12) if len(x) <= num_ind]
 for x in parts:
@@ -34,13 +34,13 @@ for mainlist in mainlists:
 all_pos = []
 for x in possible_partitions:
     for y in x:
-        all_pos.append(y)'''
+        all_pos.append(y)
+        
+        
 '''
 if len(all_pos) > 0:
     with open(f"possible_compositions_{str(num_ind)}.pkl", "wb") as f:
               pickle.dump(all_pos, f)'''
-    
-print("______________")
 
 a = Pcset([1,3,7,9,2,10])
 print(a, a.tto("T8MI"))
